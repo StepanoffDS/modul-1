@@ -1,0 +1,32 @@
+.reg-form {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+.reg-form__elem {
+	display: grid;
+	gap: 0.5rem;
+
+	width: 100%;
+	max-width: 450px;
+}
+.reg-form__elem-label {
+	font-size: 1rem;
+}
+.reg-form__elem-input {
+	padding: 8px 10px;
+	border-radius: var(--br2);
+	font-size: 18px;
+}
+.reg-form__elem-add.button {
+	width: fit-content;
+	background: transparent;
+	border: 1px solid var(--border-color);
+}
+.reg-form__elem-button.button {
+	width: fit-content;
+}
+.reg-form__elem--check {
+	display: flex;
+	align-items: center;
+}

@@ -16,28 +16,30 @@
 						Калуга Events 2025
 					</a>
 
-					<nav>
+					<button class="header__burger">Меню</button>
+
+					<nav class="header__nav">
 						<ul class="header__menu">
 							<li>
 								<a href="/registration.html">Регистрация</a>
 							</li>
 							<li>
-								<a href="#42">Авторизация</a>
+								<a href="index.html#auth">Авторизация</a>
 							</li>
 							<li>
 								<a href="/account.html">Личный кабинет</a>
 							</li>
 							<li>
-								<a href="#42">О нас</a>
+								<a href="index.html#about">О нас</a>
 							</li>
 							<li>
-								<a href="#42">Конкурсы</a>
+								<a href="index.html#competitions">Конкурсы</a>
 							</li>
 							<li>
-								<a href="#42">Поиск</a>
+								<a href="index.html#search">Поиск</a>
 							</li>
 							<li>
-								<a href="#42">Контакты</a>
+								<a href="index.html#footer">Контакты</a>
 							</li>
 							<li>
 								<a
@@ -49,8 +51,8 @@
 				</div>
 			</div>
 		</header>
-		<main>
-			<section class="competitions">
+		<main class="main">
+			<section id="competitions" class="competitions">
 				<div class="container">
 					<div class="competitions__inner">
 						<div class="competitions__sliders">
@@ -85,7 +87,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="auth top">
+			<section id="auth" class="auth top">
 				<div class="container">
 					<div class="auth__inner">
 						<h2 class="auth__title">Войти в личный кабинет</h2>
@@ -117,7 +119,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="about top">
+			<section id="about" class="about top">
 				<div class="container">
 					<div class="about__inner">
 						<h2 class="about__title">О нас</h2>
@@ -141,40 +143,270 @@
 					</div>
 				</div>
 			</section>
-			<section class="welcome">
+			<section class="welcome top">
 				<div class="container">
 					<div class="welcome__inner">
 						<h2 class="welcome__title">Приветствуем вас!</h2>
-						<div class="welcome__video">
-							<!-- <video
+						<div class="welcome__video top-2">
+							<video
 								src="./media/video/welcome.mp4"
 								autoplay
 								muted
-								loop></video> -->
-							<!-- <iframe
-								class="vk-video"
-								width="560"
-								height="1000"
-								src="https://www.youtube.com/embed/PPcZk813bdQ?si=XvMAef-D7kI181ue"
-								data-logo-src="./media/img/slide-1.jpg"
-								frameborder="0"
-								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-								referrerpolicy="strict-origin-when-cross-origin"
-								allowfullscreen></iframe> -->
-							<iframe
-								class="vk-video"
-								data-logo-src="./media/img/slide-1.jpg"
-								src="https://vkvideo.ru/video_ext.php?oid=-217327231&id=456239214&hd=2&autoplay=1"
-								width="853"
-								height="480"
-								allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;"
-								frameborder="0"
-								allowfullscreen></iframe>
+								loop
+								controls></video>
 						</div>
 					</div>
 				</div>
 			</section>
+			<section class="cards top">
+				<div class="container">
+					<div class="cards__inner">
+						<article class="cards__card">
+							<div class="cards__card-img">
+								<img src="./media/img/slide-1.jpg" alt="image" />
+							</div>
+							<h4 class="cards__card-title">Конкурс 1</h4>
+							<p class="cards__card-desc">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Corrupti, possimus.
+							</p>
+							<p class="cards__card-check">Записано: 24</p>
+							<div class="cards__card-rating">
+								<img src="./media/img/star.svg" alt="rating" />
+								5.5
+							</div>
+							<a href="#!" class="cards__card-link button">Подробнее</a>
+						</article>
+						<article class="cards__card">
+							<div class="cards__card-img">
+								<img src="./media/img/slide-1.jpg" alt="image" />
+							</div>
+							<h4 class="cards__card-title">Конкурс 2</h4>
+							<p class="cards__card-desc">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Corrupti, possimus.
+							</p>
+							<p class="cards__card-check">Записано: 24</p>
+							<div class="cards__card-rating">
+								<img src="./media/img/star.svg" alt="rating" />
+								5.5
+							</div>
+							<a href="#!" class="cards__card-link button">Подробнее</a>
+						</article>
+						<article class="cards__card">
+							<div class="cards__card-img">
+								<img src="./media/img/slide-1.jpg" alt="image" />
+							</div>
+							<h4 class="cards__card-title">Конкурс 3</h4>
+							<p class="cards__card-desc">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Corrupti, possimus.
+							</p>
+							<p class="cards__card-check">Записано: 24</p>
+							<div class="cards__card-rating">
+								<img src="./media/img/star.svg" alt="rating" />
+								5.5
+							</div>
+							<a href="#!" class="cards__card-link button">Подробнее</a>
+						</article>
+						<article class="cards__card">
+							<div class="cards__card-img">
+								<img src="./media/img/slide-1.jpg" alt="image" />
+							</div>
+							<h4 class="cards__card-title">Конкурс 4</h4>
+							<p class="cards__card-desc">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Corrupti, possimus.
+							</p>
+							<p class="cards__card-check">Записано: 24</p>
+							<div class="cards__card-rating">
+								<img src="./media/img/star.svg" alt="rating" />
+								5.5
+							</div>
+							<a href="#!" class="cards__card-link button">Подробнее</a>
+						</article>
+						<article class="cards__card">
+							<div class="cards__card-img">
+								<img src="./media/img/slide-1.jpg" alt="image" />
+							</div>
+							<h4 class="cards__card-title">Конкурс 5</h4>
+							<p class="cards__card-desc">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Corrupti, possimus.
+							</p>
+							<p class="cards__card-check">Записано: 24</p>
+							<div class="cards__card-rating">
+								<img src="./media/img/star.svg" alt="rating" />
+								5.5
+							</div>
+							<a href="#!" class="cards__card-link button">Подробнее</a>
+						</article>
+					</div>
+				</div>
+			</section>
+			<section id="search" class="search top">
+				<div class="container">
+					<div class="search__inner">
+						<h2 class="search__title">Найти конкурс</h2>
+						<input
+							type="search"
+							class="search__input top-2"
+							placeholder="Поиск конкурса..." />
+					</div>
+				</div>
+			</section>
+			<section class="reviews top">
+				<div class="container">
+					<div class="reviews__inner">
+						<h2 class="reviews__title">Отзывы</h2>
+						<div class="reviews__slider top-2">
+							<article class="reviews__card">
+								<header class="reviews__card-header">
+									<img
+										src="./media/img/user.jpg"
+										alt="user"
+										class="reviews__card-img" />
+									<h3 class="reviews__card-title">Иван Иванов</h3>
+								</header>
+								<main class="reviews__card-main">
+									<p class="reviews__card-desc">
+										Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+										Veniam animi voluptate sit consequuntur sunt blanditiis
+										distinctio ducimus non ea sint?
+									</p>
+									<p class="reviews__card-date">10.10.2024</p>
+									<a href="#!" class="reviews__card-link button">Подробнее</a>
+								</main>
+							</article>
+							<article class="reviews__card">
+								<header class="reviews__card-header">
+									<img
+										src="./media/img/user.jpg"
+										alt="user"
+										class="reviews__card-img" />
+									<h3 class="reviews__card-title">Иван Иванов</h3>
+								</header>
+								<main class="reviews__card-main">
+									<p class="reviews__card-desc">
+										Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+										Veniam animi voluptate sit consequuntur sunt blanditiis
+										distinctio ducimus non ea sint?
+									</p>
+									<p class="reviews__card-date">10.10.2024</p>
+									<a href="#!" class="reviews__card-link button">Подробнее</a>
+								</main>
+							</article>
+							<article class="reviews__card">
+								<header class="reviews__card-header">
+									<img
+										src="./media/img/user.jpg"
+										alt="user"
+										class="reviews__card-img" />
+									<h3 class="reviews__card-title">Иван Иванов</h3>
+								</header>
+								<main class="reviews__card-main">
+									<p class="reviews__card-desc">
+										Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+										Veniam animi voluptate sit consequuntur sunt blanditiis
+										distinctio ducimus non ea sint?
+									</p>
+									<p class="reviews__card-date">10.10.2024</p>
+									<a href="#!" class="reviews__card-link button">Подробнее</a>
+								</main>
+							</article>
+							<article class="reviews__card">
+								<header class="reviews__card-header">
+									<img
+										src="./media/img/user.jpg"
+										alt="user"
+										class="reviews__card-img" />
+									<h3 class="reviews__card-title">Иван Иванов</h3>
+								</header>
+								<main class="reviews__card-main">
+									<p class="reviews__card-desc">
+										Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+										Veniam animi voluptate sit consequuntur sunt blanditiis
+										distinctio ducimus non ea sint?
+									</p>
+									<p class="reviews__card-date">10.10.2024</p>
+									<a href="#!" class="reviews__card-link button">Подробнее</a>
+								</main>
+							</article>
+							<article class="reviews__card">
+								<header class="reviews__card-header">
+									<img
+										src="./media/img/user.jpg"
+										alt="user"
+										class="reviews__card-img" />
+									<h3 class="reviews__card-title">Иван Иванов</h3>
+								</header>
+								<main class="reviews__card-main">
+									<p class="reviews__card-desc">
+										Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+										Veniam animi voluptate sit consequuntur sunt blanditiis
+										distinctio ducimus non ea sint?
+									</p>
+									<p class="reviews__card-date">10.10.2024</p>
+									<a href="#!" class="reviews__card-link button">Подробнее</a>
+								</main>
+							</article>
+						</div>
+						<div class="reviews__pagination">
+							<span class="reviews__pagination-item active"></span>
+							<span class="reviews__pagination-item"></span>
+							<span class="reviews__pagination-item"></span>
+							<span class="reviews__pagination-item"></span>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="subscribe top">
+				<div class="container">
+					<div class="subscribe__inner">
+						<h2 class="subscribe__title">Подписаться на новости</h2>
+						<form action="#" class="subscribe__form top-2">
+							<div class="subscribe__elem">
+								<label for="email1" class="subscribe__elem-label">E-mail</label>
+								<input
+									type="email"
+									id="email1"
+									class="subscribe__elem-input"
+									placeholder="example@mail.com" />
+							</div>
+							<div class="subscribe__elem subscribe__elem--check">
+								<input type="checkbox" id="checkbox" />
+								<label for="checkbox" class="subscribe__elem-label">
+									Даю согласие на обработку данных
+								</label>
+							</div>
+							<button type="button" class="subscribe__elem-button button">
+								Подписаться
+							</button>
+						</form>
+					</div>
+				</div>
+			</section>
 		</main>
+		<footer id="footer" class="footer">
+			<div class="container">
+				<div class="footer__inner">
+					<div class="footer__contacts">
+						<a href="#" class="footer__contacts-link">+7 (4842) 23-45-67</a>
+						<a href="#" class="footer__contacts-link">family@cosmos.ru</a>
+					</div>
+					<nav class="footer__nav">
+						<a href="index.html" class="footer__nav-link">Главная</a>
+						<a href="index-light.html" class="footer__nav-link">
+							Главная-светлая
+						</a>
+						<a href="registration.html" class="footer__nav-link">Регистрация</a>
+						<a href="competition.html" class="footer__nav-link">Конкурс</a>
+						<a href="account.html" class="footer__nav-link">Личный кабинет</a>
+						<a href="404.html" class="footer__nav-link">Страница не найдена</a>
+					</nav>
+				</div>
+			</div>
+		</footer>
 		<script src="./media/js/script.js"></script>
 	</body>
 </html>

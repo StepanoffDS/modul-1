@@ -1,0 +1,54 @@
+.main {
+}
+.main--comp {
+}
+.comp__info {
+}
+.comp__img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center center;
+	max-width: 500px;
+}
+.comp__desc {
+	margin-top: 12px;
+	max-width: 450px;
+}
+.comp__desc p {
+	margin-top: 8px;
+}
+.comp__stats {
+	display: grid;
+	margin-top: 12px;
+}
+.comp__rating {
+}
+.comp__visitors {
+}
+
+.print-only {
+	display: none;
+}
+
+@media print {
+	body {
+		background-color: white !important;
+		color: black !important;
+	}
+
+	header,
+	footer,
+	.comp__stats {
+		display: none;
+	}
+
+	.comp__img {
+		filter: grayscale(100%); /* Преобразуем изображение в ч/б */
+	}
+
+	.print-only {
+		display: block;
+		margin-top: 20px;
+	}
+}
